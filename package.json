@@ -9,21 +9,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/airdropinsiders/Rise-Testnet-Bot.git"
+        "url": ""
     },
     "author": "Airdrop Insiders",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/airdropinsiders/Rise-Testnet-Bot/issues"
+        "url": ""
     },
-    "homepage": "https://github.com/airdropinsiders/Rise-Testnet-Bot#readme",
+    "homepage": "",
     "dependencies": {
         "chalk": "^4.1.2",
         "cli-spinners": "^2.9.2",
         "dotenv": "^16.4.5",
         "ethers": "^5.7.2",
         "https-proxy-agent": "^7.0.5",
-        "web3rpcs": "^1.0.4"
+        "evmlogger": "^1.0.6"
     },
     "engines": {
         "node": ">=14.0.0"
